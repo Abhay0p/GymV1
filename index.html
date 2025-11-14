@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullstack Gym</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-body-tertiary">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                Fullstack Gym
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="membership.html">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <!-- 
+                      - ADDED: An ID to this list item so JavaScript can target it.
+                    -->
+                    <li class="nav-item" id="login-nav-item">
+                        <a class="nav-link" target="_self" href="login.html">
+                            <img src="account.png" alt="Login" width="20" height="20" style="margin-right: 5px; vertical-align: text-bottom;">Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5 text-center">
+        <h1 class="display-4 fw-bold">Welcome to Fullstack Gym</h1>
+        <p class="lead col-lg-8 mx-auto">
+            Your journey to fitness starts here. Join us to achieve your health goals with expert trainers and state-of-the-art facilities.
+        </p>
+    </div>
+
+    <div class="container mb-5">
+        <h2 class="text-center mb-4">Our Facilities</h2>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <img src="gym1.webp" class="img-fluid rounded shadow-sm" alt="Modern gym interior" onerror="this.src='https://placehold.co/600x400/555/FFF?text=Gym+Facility+1'">
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <img src="gym2.jpeg" class="img-fluid rounded shadow-sm" alt="Weight rack" onerror="this.src='https://placehold.co/600x400/555/FFF?text=Gym+Facility+2'">
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=600" class="img-fluid rounded shadow-sm" alt="Person lifting weights" onerror="this.src='https://placehold.co/600x400/555/FFF?text=Gym+Facility+3'">
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <img src="https://images.unsplash.com/photo-1517836357-6743f11d1236?w=600" class="img-fluid rounded shadow-sm" alt="Gym with ropes" onerror="this.src='https://placehold.co/600x400/555/FFF?text=Gym+Facility+4'">
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <img src="gym3.jpg" class="img-fluid rounded shadow-sm" alt="Treadmills" onerror="this.src='https://placehold.co/600x400/555/FFF?text=Gym+Facility+5'">
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?w=600" class="img-fluid rounded shadow-sm" alt="Dumbbells close up" onerror="this.src='https://placehold.co/600x400/555/FFF?text=Gym+Facility+6'">
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-auto bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <a href="#" class="mb-3 d-inline-block">
+                        <img src="logo.png" alt="Logo" style="width: 100px; height: 100px; background-color: white; border-radius: 50%; padding: 10px;">
+                    </a>
+                    <div class="mt-3">
+                        <a href="#" class="text-white text-decoration-none me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.917 3.917 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.703.01 5.556 0 5.829 0 8s.01 2.444.048 3.297c.04.852.174 1.433.372 1.942.205.52.478.972.923 1.417.444.445.896.719 1.417.923.509.198 1.09.333 1.942.372C5.556 15.99 5.829 16 8 16s2.444-.01 3.297-.048c.852-.04 1.433-.174 1.942-.372.52-.205.972-.478 1.417-.923.445-.444.719-.896.923-1.417.198-.509.333-1.09.372-1.942C15.99 10.444 16 10.171 16 8s-.01-2.444-.048-3.297c-.04-.852-.174-1.433-.372-1.942A3.917 3.917 0 0 0 13.24.42 3.917 3.917 0 0 0 11.8.048C10.95.01 10.671 0 8 0zm0 1.44C10.114 1.44 10.383 1.452 11.2 1.48c.813.028 1.25.166 1.618.31.43.17.743.386 1.062.705.318.318.536.63.705 1.062.145.368.282.805.31 1.618.028.817.04 1.086.04 3.2 0 2.114-.012 2.383-.04 3.2-.028.813-.166 1.25-.31 1.618-.17.43-.386.743-.705 1.062-.318.318-.63.536-1.062.705-.368.145-.805.282-1.618.31-.817.028-1.086.04-3.2.04-2.114 0-2.383-.012-3.2-.04-.813-.028-1.25-.166-1.618-.31-.43-.17-.743-.386-1.062-.705-.318.318-.536.63-.705-1.062-.145-.368-.282-.805-.31-1.618-.028-.817-.04-1.086-.04-3.2 0-2.114.012 2.383.04-3.2.028-.813.166 1.25.31-1.618.17-.43.386.743.705-1.062.318-.318.63.536 1.062.705.368-.145.805.282 1.618.31.817.028 1.086.04 3.2.04zM8 4.132a3.868 3.868 0 1 0 0 7.736 3.868 3.868 0 0 0 0-7.736zm0 6.276a2.408 2.408 0 1 1 0-4.816 2.408 2.408 0 0 1 0 4.816zM13.868 3.713a.904.904 0 1 1-1.808 0 .904.904 0 0 1 1.808 0z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-white text-decoration-none me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .79 13.58a6.32 6.32 0 0 1-.75-.045 9.344 9.344 0 0 0 5.026 1.455z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-white text-decoration-none me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.705-.52-1.248-1.342-1.248-.822 0-1.359.543-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-white text-decoration-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0 0 3.604 0 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Quick Links
+                    </h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                            <a href="/about.html" class="text-white text-decoration-none">About</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="/faq.html" class="text-white text-decoration-none">FAQs</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="/privacy.html" class="text-white text-decoration-none">Privacy Policy</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="/refund.html" class="text-white text-decoration-none">Refund & Cancellation</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="/contact.html" class="text-white text-decoration-none">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-12 col-lg-6 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Contact
+                    </h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-3 d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill me-3" viewBox="0 0 16 16" style="flex-shrink: 0; margin-top: 5px;">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                            </svg>
+                            <span>Bennett University, Uttar Pradesh 201301</span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill me-3" viewBox="0 0 16 16" style="flex-shrink: 0; margin-top: 5px;">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.363-1.03-.038-2.137.703-2.877L1.885.511z"/>
+                            </svg>
+                            <span>+91 9368465550</span> 
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill me-3" viewBox="0 0 16 16" style="flex-shrink: 0; margin-top: 5px;">
+                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.803V4.697l-5.803 3.546z"/>
+                            </svg>
+                            <span>abhaynarayan0001@gmail.com</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-4">
+                        <a href="#" class="me-2">
+                            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" style="height: 50px;">
+                        </a>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- === START JAVASCRIPT FOR LOGIN STATUS === -->
+    <script>
+        // This script runs when the page content is finished loading
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check if a username is saved in the browser's session storage
+            const username = sessionStorage.getItem('username');
+            
+            // Find the <li> element that holds the login link
+            const loginNavItem = document.getElementById('login-nav-item');
+
+            if (username && loginNavItem) {
+                // If a user is logged in, change the link to "Logout"
+                loginNavItem.innerHTML = `
+                    <a id="logout-link" class="nav-link" href="#" style="cursor: pointer;">
+                        <img src="account.png" alt="Logout" width="20" height="20" style="margin-right: 5px; vertical-align: text-bottom;">
+                        Logout (${username})
+                    </a>
+                `;
+
+                // Add a click event listener to the new "Logout" link
+                const logoutLink = document.getElementById('logout-link');
+                logoutLink.addEventListener('click', (event) => {
+                    event.preventDefault(); // Prevent the link from navigating
+                    
+                    // Clear the user's data from session storage
+                    sessionStorage.removeItem('username');
+                    
+                    // Reload the page to reset the state
+                    window.location.reload();
+                });
+            }
+            // If no username is found, the "Login" link remains as is.
+        });
+    </script>
+    <!-- === END JAVASCRIPT FOR LOGIN STATUS === -->
+</body>
+</html>
