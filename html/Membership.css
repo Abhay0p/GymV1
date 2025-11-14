@@ -1,0 +1,84 @@
+/* Gym motto */
+
+#Gym-Motto{
+    display: Flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: 600px ;
+    margin-top: 100px;
+    font-family:  "Poppins", "Inter", "Roboto", sans-serif;
+    font-style: italic;
+}
+#Gym-Motto p{
+    margin-left: 600px;
+}
+/* main */
+main{
+    display:grid;
+    grid-template-rows: 750px ;
+    grid-template-columns: 450px 450px 450px;
+    justify-content: center;
+    
+    padding: 80px;
+    gap:80px;
+}
+
+
+
+/* monthly membreship card */
+.Membership-plan{
+    border-radius: 20px ;
+    display: flex;
+    flex-direction: column;
+    background-color:  #1f1f1f ;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* smooth shadow */
+    
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 50px ;
+    font-family: "Poppins", sans-serif;
+    color: #f5f5f5;
+    gap:18px;
+}
+
+.Membership-plan h1{
+    margin-top: 20px;
+    color: #f5f5f5;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.Membership-plan:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.Membership-plan ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    font-size: 20px;
+}
+.Membership-plan button{
+   
+    margin-top: 30px;
+    height:50px;
+    font-size:20px ;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+.vline{
+    margin: 20px;
+    width: 2px;
+    
+    background-color: grey;
+    margin-bottom: 30px ;
+    transform: rotate(90deg);
+    
+}
+
+
+
+
